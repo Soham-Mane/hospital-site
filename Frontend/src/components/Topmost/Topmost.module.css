@@ -1,0 +1,37 @@
+.container{
+    width: 100%;
+    height: 8rem;
+    /* background-color:aqua; */
+    display: grid;
+    grid-template-columns: 20rem 2fr 3fr 20rem;
+}
+.logo{ 
+    grid-column: 2/3;
+    font-size: 1.7vw;
+    
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.logo span{
+    color:#1F2B6C;
+    font-weight: bold;
+}
+.logo span:nth-child(2) {
+    color: #159EEC;
+    font-weight: bold;
+  }
+  .images{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+  @media (max-width:600px) {
+    .container{
+        width: 100%;
+        height: 8rem;
+        grid-template-columns: 2rem 2fr 3fr 2rem;
+        background-color: aqua;
+    }
+  }

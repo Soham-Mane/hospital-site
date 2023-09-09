@@ -1,0 +1,81 @@
+.mainDiv{
+    width: 100%;
+    height: 55rem;
+position: relative;
+align-items: center;
+display: grid;
+grid-template-columns: 20rem 2fr 20rem;
+
+}
+.ell1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.ell2{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.content{
+    width: 519px;
+    height: 270px;
+grid-column: 2/3;
+display: flex;
+flex-direction: column;
+gap: 15px;
+/* background-color: antiquewhite; */
+}
+.smallText{
+    color: #159EEC;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.div{
+    width: 100%;
+    height: 110px;
+    /* background-color: rgb(229, 143, 13); */
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.div span{
+ font-size: 38px;
+   font-weight: 200;
+   font-family: 'Yeseva One', cursive;
+   color: #1F2B6C;
+   text-align: left;
+}
+
+  
+
+.doctor{
+    width: 100%;
+    height: 550px;
+}
+.profile {
+    grid-column: 3/4;
+
+}
+.btn{
+    background-color: #BFD2F8;
+    border-radius: 50px;
+    width: 173px;
+    height: 55px;
+    font-size: 2rem;
+    color: #1F2B6C;
+    border: none;
+    font-weight: 400;
+    display: block;
+    margin-right: 5px;
+}
+
+.secondDiv{
+    width: 658px;
+    height: 200px;
+    background-color: #BFD2F8;
+}

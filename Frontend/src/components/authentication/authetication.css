@@ -1,0 +1,36 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.opt-container{
+    display: flex;
+    justify-content:space-between;
+    gap: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.spin-animation{
+    animation: spin 1s linear infinite;
+}
+.phone{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: antiquewhite;
+  max-width: 300px;
+}
+.center{
+    
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.center2{
+    display: flex;
+    /* background-color: black; */
+    justify-content: center;
+}
+p{
+    font-weight: 400;
+    font-size: 1rem;
+}

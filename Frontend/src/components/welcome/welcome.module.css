@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin-top: 15rem;
+gap: 10rem
+}
+.mainDiv{
+    width: 658px;
+    height: 201px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+.mainDiv span:nth-child(1){
+    color: #159EEC;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.mainDiv span:nth-child(2){
+    color: #1F2B6C;
+    font-family: 'Yeseva One', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.mainDiv span:nth-child(3){
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.mainDiv span:nth-child(4){
+    color: #159EEC;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 2rem;
+   padding: 10px;
+
+ 
+}

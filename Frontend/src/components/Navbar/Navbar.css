@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  .main-nav{
+    background-color: #1F2B6C;
+    display: flex;
+    width: 100%;
+    height: 9rem;
+    display: grid;
+    grid-template-columns: 20rem 2fr 2fr 20rem;
+  }
+.logo{
+  display: none;
+}
+  .menu-link{
+    grid-column: 2/3;
+
+   
+  }
+  .menu-link ul{
+    display: flex;
+    height: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+  }
+  .menu-link ul li a{
+    font-size: 1vw;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .menu-link ul li:hover > a {
+    transform-origin: left;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  .search{
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+  .btn{
+    background-color: #BFD2F8;
+    border-radius: 50px;
+    width: 173px;
+    height: 45px;
+    font-size: 2rem;
+    color: #1F2B6C;
+    border: none;
+    font-weight: 400;
+    display: block;
+    margin-right: 5px;
+  }
+  .menu-link button
+  {
+    display: none;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  main-nav h1{
+    display: none;
+  }
+  @media (max-width: 1080px) {
+    .main-nav{
+        height: 8rem;
+        grid-template-columns: 2rem 3fr 3fr  2rem;
+    }
+    .menu-link ul li a{
+        font-size: 2vw;
+        color: #fff;
+        transition: 0.5s;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .hamburger-menu{
+        display: block;
+        font-size: 5rem;
+        position: absolute;
+        top: 10px;
+        right: 40px;
+      }
+
+      .menu-link {
+        display: none;       
+      }
+      menu-link ul button{
+        display: none;
+      }
+      .search button{
+       display: none;
+      }
+      .search{
+        /* position: absolute; */
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .search img.search {
+        margin-right: 5px; /* Add a 5px margin to the right of the image */
+      }
+      .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .mobile-menu-link {
+        background-color: #BFD2F8;
+        color: #1F2B6C;
+        height: 30rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      .mobile-menu-link ul {
+        height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 0;
+  margin: 0;
+  gap: 5px;
+      }
+      .mobile-menu-link ul li {
+        margin: 5px 5px;
+        
+      }
+      .mobile-menu-link ul li a {
+       color: #1F2B6C;
+       text-decoration: none;
+       text-align: center;
+       font-size: 4vw;
+
+      }
+      .mobile-menu-link ul button{
+        background-color: #1F2B6C;
+        border-radius: 50px;
+        width: 173px;
+        height: 35px;
+        font-size: 1.2rem;
+        color: #fff;
+        border: none;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        margin-top: 20px;
+        padding: 2rem;
+      }
+      .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+      }
+      .logo{
+        font-family: 'Yeseva One', cursive;
+        font-size: 6vw;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        /* margin-left: 8rem; */
+        padding-left: 2rem;
+    }
+    .logo span{
+        color: #c9ccdb;
+    }
+    .logo span:nth-child(2) {
+        color: #159EEC;
+      }
+  }
